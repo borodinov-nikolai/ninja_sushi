@@ -1,7 +1,7 @@
-import ThemeProvider from '@/features/configs/themeProvider'
+import ThemeProvider from '@/shared/configs/themeProvider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '@/features/styles/global.scss'
+import '@/shared/styles/global.scss'
 import { Header } from '@/widgets/header'
 
 const inter = Inter({ subsets: ['latin'] })

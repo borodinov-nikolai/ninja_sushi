@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import Image from 'next/image';
-import img_logo from '@/features/assets/images/logo.png';
-import img_logoMobile from '@/features/assets/images/logo_mobile.png';
-import icon_phone from '@/features/assets/icons/phone_icon.png';
+import img_logo from '@/shared/assets/images/logo.png';
+import img_logoMobile from '@/shared/assets/images/logo_mobile.png';
+import icon_phone from '@/shared/assets/icons/phone_icon.png';
 import Link from 'next/link';
 
 const Header = () => {

@@ -1,4 +1,4 @@
-@import '../../../features/styles/mixins/breakpoints';
+@import '../../../shared/styles/mixins/breakpoints';
 
 
 .root {
@@ -220,6 +220,10 @@ align-items: center;
     .city {
         font-size: 12px;
     }
+
+    .call {
+        display: none;
+    }
     .rightMenu {
         .cart {
             display: none;
@@ -246,9 +250,7 @@ align-items: center;
 
   
 
-    .call {
-        display: none;
-    }
+    
 
     
 }

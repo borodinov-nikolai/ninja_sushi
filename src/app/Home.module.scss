@@ -1,0 +1,18 @@
+@import '../shared/styles/mixins/breakpoints';
+
+
+
+
+
+.categories  {
+ margin-top: 16px;
+}
+
+
+@include breakpoint(md) {
+   
+    .categories {
+
+        margin-top: 6px;
+    }
+}
