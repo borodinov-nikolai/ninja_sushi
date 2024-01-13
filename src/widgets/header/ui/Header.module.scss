@@ -1,0 +1,254 @@
+@import '../../../features/styles/mixins/breakpoints';
+
+
+.root {
+    margin-top: 16px;
+    background: white;
+    height: 80px;
+border-radius: 12px;
+padding: 0 24px; 
+justify-content: space-between;
+display: flex;
+align-items: center;
+
+
+
+}
+
+
+
+.logo {
+    height: 100%;
+     display: flex;
+     align-items: center;
+    cursor:pointer;
+    .logo_logoMobile {
+  display: none;
+    }
+   
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    cursor: pointer;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+        a {
+            height: 68px;
+            border-radius: 12px;
+            padding: 0 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background: rgba(255, 102, 51, 0.15);
+            }
+        }
+    
+}
+
+.call {
+    padding: 0 1rem;
+    border-radius: 12px;
+    height: 68px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &:hover {
+                background: rgba(255, 102, 51, 0.15);
+
+    }
+}
+
+
+
+
+.rightMenu {
+    display: flex;
+    gap: 12px;
+
+    .burger {
+        display: none;
+    }
+  
+    button {
+        display:flex;
+        gap: 8px;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        outline: 1px solid rgba(210, 210, 215, 1);
+        border-radius: 12px;
+        background: white;
+        padding: 1rem;
+      
+            p {
+                font-size: 1rem;
+                line-height: 24px;
+                font-weight: 500;
+                color: rgba(104, 104, 112, 1);
+            }
+
+        
+
+        &:hover {
+            outline: none;
+           background: rgba(245, 245, 245, 1);
+            border: none;
+            p {
+                color: rgba(255, 102, 51, 1);
+            }
+            svg {
+                path {
+                    fill: rgba(255, 102, 51, 1);
+                 }
+                }
+
+        }
+
+        &:active {
+            color: white;
+            background: rgba(255, 102, 51, 1);
+            p {
+                color: white;
+            }
+            svg {
+                path {
+                    fill: white;
+                 }
+                }
+              
+                
+                
+        }
+
+
+      
+    }
+
+
+    
+
+
+}
+
+
+
+
+@include breakpoint(2xl) {
+    .number {
+        display: none;
+    }
+}
+
+
+@include breakpoint(xl) {
+    .root {
+        height: 56px;
+    }
+
+    .city {
+     font-size: 14px;
+    }
+
+    .navigation {
+        font-size: 14px;
+    }
+
+    .rightMenu {
+
+        button {
+
+            padding: 10px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+    .navigation {
+        a {
+            padding: 0 10px;
+        }
+    }
+}
+
+@include breakpoint(lg) {
+
+  
+
+     .city {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+
+   
+   
+        .navigation {
+            display: none;
+        }
+
+        .rightMenu {
+        
+            gap: 4px;
+
+            .burger {
+                 background: rgba(245, 245, 247, 1);
+                outline: none;
+                display: flex;
+            }
+        }
+}
+
+
+@include breakpoint(md) {
+
+    .city {
+        font-size: 12px;
+    }
+    .rightMenu {
+        .cart {
+            display: none;
+        }
+    }
+}
+
+@include breakpoint(sm) {
+
+    .root {
+        padding: 0 12px;
+    }
+
+
+    .logo {
+       .logo_logoDesktop {
+            display:none;
+       }
+
+        .logo_logoMobile {
+            display: block;
+        }
+    }
+
+  
+
+    .call {
+        display: none;
+    }
+
+    
+}
