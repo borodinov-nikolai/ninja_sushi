@@ -8,11 +8,34 @@
  margin-top: 16px;
 }
 
+.hero {
+    margin-top: 8px;
+    padding: 0 4px;
+}
+
+
+.sushiBlock {
+    margin-top: 48px;
+}
+
 
 @include breakpoint(md) {
    
     .categories {
 
         margin-top: 6px;
+    }
+
+    .hero {
+        margin-top: 20px;
+    }
+}
+@include breakpoint(2xl) {
+    .hero {
+        margin-top: 48px;
+    }
+
+    .sushiBlock {
+        margin-top: 124px;
     }
 }

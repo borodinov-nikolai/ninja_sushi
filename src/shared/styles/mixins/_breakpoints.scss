@@ -9,7 +9,8 @@ $breakpoints: (
 @mixin breakpoint($point) {
   $pointValue: map-get($breakpoints, $point);
 
-  @media (max-width: $pointValue) {
+  @media (min-width: $pointValue) {
     @content;
   }
 }
+
