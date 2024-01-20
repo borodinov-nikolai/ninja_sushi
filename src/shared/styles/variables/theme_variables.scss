@@ -2,7 +2,7 @@
     /* Your default theme */
     --background:rgba(245, 245, 247, 1);;
 
-
+    
 
 
         //buttons:
@@ -19,7 +19,17 @@
     ;
     
 
-    
+
+
+ 
+     //------Swiper---------------------
+
+     //pagination
+     --swiper-pagination-color:rgba(255, 102, 51, 1);
+     --swiper-pagination-bullet-size: 11.26px;
+     --swiper-pagination-bullet-horizontal-gap: 7.5px;
+     --swiper-pagination-bullet-inactive-color: rgba(210, 210, 215, 1);
+     --swiper-pagination-bullet-inactive-opacity: 1;
   }
   
   [data-theme='dark'] {
