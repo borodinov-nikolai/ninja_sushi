@@ -14,7 +14,11 @@
 }
 
 
-.sushiBlock {
+.productsBlock {
+    margin-top: 48px;
+}
+
+.promoSlider {
     margin-top: 48px;
 }
 
@@ -29,13 +33,17 @@
     .hero {
         margin-top: 20px;
     }
+
+    .promoSlider {
+        margin-top: 124px;
+    }
 }
 @include breakpoint(2xl) {
     .hero {
         margin-top: 48px;
     }
 
-    .sushiBlock {
+    .productsBlock {
         margin-top: 124px;
     }
 }

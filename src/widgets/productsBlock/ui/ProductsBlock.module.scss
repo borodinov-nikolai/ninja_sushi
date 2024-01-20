@@ -1,0 +1,88 @@
+@import '../../../shared/styles/mixins/breakpoints';
+
+.root {
+}
+
+
+.header {
+    button {
+        display: none;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mobileCardHolder {
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: 24px;
+    row-gap: 12px;
+}
+.cardHolder {
+    display: none;
+}
+
+
+
+.cardHolder {
+    margin-top: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap:20px;
+    width: 100%;
+}
+
+
+.footer {
+    margin-top: 18px;
+    button {
+        width: 100% !important;
+    }
+}
+
+@include breakpoint(sm) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            display: block;
+        }
+    }
+
+    .title {
+        text-align: start;
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: 700;
+    }
+    .mobileCardHolder {
+        display: none;
+    }
+
+    .cardHolder {
+        display: grid;
+    }
+
+    .footer {
+        display: none;
+    }
+
+ 
+}
+
+@include breakpoint(xl) {
+    .cardHolder {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@include breakpoint(3xl) {
+    .cardHolder {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

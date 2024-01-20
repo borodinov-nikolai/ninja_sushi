@@ -1,0 +1,170 @@
+@import '../../../shared/styles/mixins/breakpoints';
+
+
+
+.root {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    background: white;
+}
+
+.imageHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: auto;
+        height: 180px;
+    }
+}
+
+
+
+.title {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 700;
+
+}
+
+.weight {
+    margin-top: 12px;
+    color: rgba(255, 102, 51, 1);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+
+.composition {
+    margin-top: 8px;
+    color:rgba(104, 104, 112, 1);
+
+}
+
+.footer {
+    margin-top: auto;
+    display: flex;
+}
+
+.price {
+    align-self: flex-end;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    span {
+        font-size: 26px;
+        line-height: 32px;
+        color: rgba(104, 104, 112, 1);
+        font-weight: 700;
+    }
+}
+
+.favoriteBtn {
+    margin-left: auto;
+    margin-right: 6px;
+    display:flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid rgba(210, 210, 215, 1);
+    border-radius: 12px;
+    background: white;
+    padding: 12px;
+  
+        p {
+            font-size: 1rem;
+            line-height: 24px;
+            font-weight: 500;
+            color: rgba(104, 104, 112, 1);
+        }
+
+    
+
+    &:hover {
+        outline: none;
+       background: rgba(245, 245, 245, 1);
+        border: none;
+        p {
+            color: rgba(255, 102, 51, 1);
+        }
+        svg {
+            path {
+                fill: rgba(255, 102, 51, 1);
+             }
+            }
+
+    }
+
+    &:active {
+        color: white;
+        background: rgba(255, 102, 51, 1);
+        p {
+            color: white;
+        }
+        svg {
+            path {
+                fill: white;
+             }
+            }
+          
+            
+            
+    }
+
+
+  
+}
+
+.addToCartBtn {
+    cursor: pointer;
+    border:none;
+    font-size: 35px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 52px;
+    background:rgba(204, 245, 213, 1);
+      &:hover {
+        background: rgba(0, 204, 45, 1);
+      }
+}
+
+
+@include breakpoint(md) {
+    .price {
+        font-size: 40px;
+    }
+
+    .favoriteBtn {
+        margin-right: 12px;
+    }
+
+}
+
+
+@include breakpoint(lg) {
+
+
+.root {
+    height: 596px;
+}
+
+    .imageHolder {
+        img {
+            height: 250px;
+        }
+    }
+    
+
+   
+}

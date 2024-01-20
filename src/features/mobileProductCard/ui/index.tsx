@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.module.scss'
+import styles from './MobileProductCard.module.scss'
 import Image from 'next/image'
 import img from '@/shared/assets/images/Гункан_лосось_м.png'
 
