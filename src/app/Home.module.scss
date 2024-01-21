@@ -2,7 +2,9 @@
 
 
 
-
+.root {
+    padding-bottom: 48px;
+}
 
 .categories  {
  margin-top: 16px;
@@ -24,6 +26,10 @@
 
 
 @include breakpoint(md) {
+
+    .root {
+        padding-bottom: 124px;
+    }
    
     .categories {
 

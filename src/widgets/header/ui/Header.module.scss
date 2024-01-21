@@ -1,6 +1,11 @@
 @import '../../../shared/styles/mixins/breakpoints';
 
 
+.root {
+    width: 100%;
+}
+
+
 .inner {
     margin-top: 16px;
     background: white;
@@ -11,14 +16,12 @@ justify-content: space-between;
 display: flex;
 align-items: center;
 
-
-
 }
 
 
 
 .logo {
-    height: 100%;
+    height: 56px;
      display: flex;
      align-items: center;
     cursor:pointer;
@@ -31,17 +34,17 @@ align-items: center;
 .city {
     display: flex;
     align-items: center;
-    height: 68px;
+    height: 56px;
     cursor: pointer;
 }
 
 .navigation {
-    height: 100%;
+    height: 56px;
     display: flex;
     align-items: center;
   
         a {
-            height: 68px;
+            height: 100%;
             border-radius: 12px;
             padding: 0 18px;
             display: flex;
@@ -58,7 +61,7 @@ align-items: center;
 .call {
     padding: 0 1rem;
     border-radius: 12px;
-    height: 68px;
+    height: 56px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -153,12 +156,13 @@ align-items: center;
 
 
 @media(max-width: 1200px) {
-    .root {
+    .inner {
         height: 56px;
     }
 
     .city {
      font-size: 14px;
+     height: 56px;
     }
 
     .navigation {
@@ -233,9 +237,7 @@ align-items: center;
 
 @media(max-width: 576px) {
 
-    .root {
-        padding: 0 12px;
-    }
+    
 
 
     .logo {

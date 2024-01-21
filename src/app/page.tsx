@@ -8,14 +8,14 @@ import { PromoSlider } from "@/features/promoSlider";
 export default function Home() {
   return (
     <main className={styles.root} >
-   <div className={styles.categories} ><Categories/></div>
-   <div className={styles.hero} ><HeroSlider/></div>
-   <div className={styles.productsBlock} ><ProductsBlock title={'Суши'} /></div>
-   <div className={styles.productsBlock} ><ProductsBlock title={'Роллы'} /></div>
-   <div className={styles.productsBlock} ><ProductsBlock title={'Сеты'} /></div>
-   <div className={styles.promoSlider} ><PromoSlider/></div>
-   <div className={styles.productsBlock} ><ProductsBlock title={'Закуски'} /></div>
-   <div className={styles.productsBlock} ><ProductsBlock title={'Напитки'} /></div>
+   <section className={styles.categories} ><Categories/></section>
+   <section className={styles.hero} ><HeroSlider/></section>
+   <section className={styles.productsBlock} ><ProductsBlock title={'Суши'} /></section>
+   <section className={styles.productsBlock} ><ProductsBlock title={'Роллы'} /></section>
+   <section className={styles.productsBlock} ><ProductsBlock title={'Сеты'} /></section>
+   <section className={styles.promoSlider} ><PromoSlider/></section>
+   <section className={styles.productsBlock} ><ProductsBlock title={'Закуски'} /></section>
+   <section className={styles.productsBlock} ><ProductsBlock title={'Напитки'} /></section>
     </main>
   )
 }

@@ -9,9 +9,9 @@ import Link from 'next/link';
 const Header = () => {
   return (
             
-    <div className={styles.root} >
+    <header className={styles.root} >
             
-<div className='container' >
+<div className = 'container' >
         <div className={styles.inner} > 
         
                     <div className={styles.logo} >
@@ -76,7 +76,7 @@ const Header = () => {
 
            
 
-                </div>
+                </header>
   
   )
 }

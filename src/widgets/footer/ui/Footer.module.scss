@@ -1,0 +1,125 @@
+
+
+
+.root {
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.location_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 24px 16px;
+}
+
+.location_markers {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 104px;
+    justify-content: start;
+    padding-left: 16px;
+    gap: 10.5px;
+}
+
+.location_marker {
+    display: flex;
+    gap: 8px;
+}
+
+.location_greenCircle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: rgba(124, 179, 66, 0.24);
+    border: 1px solid rgba(85, 178, 11, 1);
+}
+.location_orangeCircle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: rgba(251, 192, 45, 0.24);
+    border: 1px solid rgba(251, 192, 45, 1);
+}
+.location_redCircle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: rgba(255, 82, 82, 0.24);
+    border: 1px solid rgba(255, 82, 82, 1);
+}
+
+.map {
+    iframe {
+        width: 100%;
+    }
+}
+
+.app {
+    margin-top: 144px;
+}
+
+.app_inner {
+    position: relative;
+    border-radius: 12px;
+    background: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app_image {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+}
+
+.app_title {
+    margin-top: 140px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.app_description {
+    margin-top: 12px;
+    color: rgba(104, 104, 112, 1);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.app_downloads {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.aboutUs {
+    margin-top: 48px;
+}
+
+.aboutUs_text {
+    color:rgba(158, 158, 158, 1);
+}
+
+.aboutUs_more {
+    cursor: pointer;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: rgba(0, 204, 45, 1);
+    svg {
+        fill: rgba(0, 204, 45, 1);
+        width: 20px;
+        height: 20px;
+        transform: rotate(90deg);
+    }
+}
