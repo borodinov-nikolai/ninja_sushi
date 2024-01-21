@@ -11,7 +11,7 @@ const Header = () => {
             
     <header className={styles.root} >
             
-<div className = 'container' >
+
         <div className={styles.inner} > 
         
                     <div className={styles.logo} >
@@ -71,7 +71,7 @@ const Header = () => {
                         </button>
                     </div>
         </div>
-</div>
+
 
 
            

@@ -2,7 +2,11 @@
 
 
 .root {
+    max-width: 1600px;
+    margin: 0 auto;
     width: 100%;
+    padding: 0 4px;
+  
 }
 
 
@@ -148,6 +152,12 @@ align-items: center;
 
 
 
+@media(min-width: 1600px) {
+    .root {
+        padding: 0;
+    }
+}
+
 @media(max-width: 1400px) {
     .number {
         display: none;
@@ -166,7 +176,11 @@ align-items: center;
     }
 
     .navigation {
+        height: 40px;
         font-size: 14px;
+    }
+    .call {
+        height: 40px;
     }
 
     .rightMenu {
@@ -238,7 +252,6 @@ align-items: center;
 @media(max-width: 576px) {
 
     
-
 
     .logo {
        .logo_logoDesktop {
