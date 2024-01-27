@@ -1,4 +1,4 @@
-
+@import '../../../shared/styles/mixins/breakpoints';
 
 
 .root {
@@ -55,8 +55,9 @@
     border: 1px solid rgba(255, 82, 82, 1);
 }
 
-.map {
+.location_map {
     iframe {
+        height: 320px;
         width: 100%;
     }
 }
@@ -74,14 +75,21 @@
     flex-direction: column;
 }
 
-.app_image {
+.app_image_m {
     position: absolute;
     top: -100px;
     left: 16px;
 }
 
-.app_title {
+.app_image {
+    display: none;
+}
+
+.app_textHolder {
     margin-top: 140px;
+}
+.app_title {
+ 
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -105,7 +113,7 @@
 }
 
 .aboutUs_text {
-    color:rgba(158, 158, 158, 1);
+    color:rgba(158, 158, 158, 1) ;
 }
 
 .aboutUs_more {
@@ -121,5 +129,93 @@
         width: 20px;
         height: 20px;
         transform: rotate(90deg);
+    }
+}
+
+
+
+
+
+@include breakpoint(xl) {
+    .location_title {
+        text-align: center;
+        max-width: 1246px;
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 64px;
+        font-weight: 700;
+    }
+
+    .location_markers {
+        height: 62px;
+        width: unset;
+        flex-direction: row;
+        max-width: 908px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    .location_title {
+        padding:  88px 0 48px 0;
+    }
+
+    .location_map {
+        iframe {
+            height: 671px;
+        }
+    }
+
+    .app {
+        margin-top: 226px;
+    } 
+
+    .app_inner {
+        padding: 98px 0 85px 98px;
+        max-width: 1576px;
+        margin: 0 auto;
+    }
+
+
+    .app_textHolder {
+        max-width: 540px;
+        margin: 0;
+    }
+
+    .app_title {
+        margin: 0;
+        font-size: 54px;
+        line-height: 65.35px;
+    }
+    
+    .app_image_m {
+        display: none;
+    }
+
+    .app_image {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 109px;
+    }
+
+    .app_textHolder {
+        max-width: 540px;
+    }
+
+    .aboutUs {
+        max-width: 778px;
+        margin: 0 auto;
+        margin-top: 124px;
+        margin-bottom: 34px;
+    }
+}
+
+
+
+
+@include breakpoint(2xl) {
+    .location_title {
+        font-size: 48px;
     }
 }
