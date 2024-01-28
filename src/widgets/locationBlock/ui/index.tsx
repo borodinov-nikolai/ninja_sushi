@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './LocationBlock.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import img_app_m from '../assets/images/footer_app_image_m.png'
-import img_app from '../assets/images/footer_app_image.png'
-import img_app_store from '../assets/images/app_store.png'
-import img_google_play from '../assets/images/google_play.png'
+import img_app_m from '../assets/images/app_image_m.png'
+import img_app from '../assets/images/app_image.png'
+import img_app_store from '@/shared/assets/icons/app_store.png'
+import img_google_play from '@/shared/assets/icons/google_play.png'
 
 const LocationBlock = () => {
   return (

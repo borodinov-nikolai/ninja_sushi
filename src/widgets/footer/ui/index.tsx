@@ -9,7 +9,12 @@ import img_telegram from '@/shared/assets/icons/telegram.png'
 import img_mastercard from '@/shared/assets/icons/master_card.png'
 import img_visa from '@/shared/assets/icons/visa.png'
 import img_greenBank from '@/shared/assets/icons/green_bank.png'
+import img_app_store from '@/shared/assets/icons/app_store.png'
+import img_google_play from '@/shared/assets/icons/google_play.png'
 import Button from '@/shared/ui/button';
+
+
+
 const Footer = () => {
     return (
         <footer className={styles.root} >
@@ -19,6 +24,12 @@ const Footer = () => {
                     <Image src={img_logo} width={246} height={59} alt='footer logo' />
                     <p>В ассортименте Ninja Sushi представлены роллы, суши, сеты и напитки на любой вкус.</p>
                 </div>
+                <div className={styles.leftBlock_apps} >
+                        <Image style={{width:'110px', height: '37px'}}  src={img_app_store} width={110} height={37} alt='app store' />
+                        <Image style={{width:'123px', height: '37px'}} src={img_google_play} width={123} height={37} alt='google play' />
+                    </div>
+                    <p className={styles.leftBlock_copyright} >© Ninja Sushi. All rights reserved.</p>
+              
             </div>
             <div className={styles.navigation} >
                 <h3>Навигация:</h3>
@@ -55,16 +66,32 @@ const Footer = () => {
                 </ul>
                 <Button ><Image src={img_telegram} width={20} height={16} alt='telegram icon' />Техподдержка</Button>
             </div>
-            <div className={styles.rightBlock} >
-                <h2>Пользовательское соглашение</h2>
-                <ul className={styles.rightBlock_icons} >
-                    <li><Image src={img_mastercard} width={37} height={30} alt='master card' /></li>
-                    <li><Image src={img_visa} width={53} height={17} alt='visa' /></li>
-                    <li><Image src={img_greenBank} width={24} height={24} alt='green bank' /></li>
+            <div className={styles.rightBlock_m} >
+                    <h2>Пользовательское соглашение</h2>
+                    <ul className={styles.rightBlock_icons} >
+                        <li><Image src={img_mastercard} width={37} height={30} alt='master card' /></li>
+                        <li><Image src={img_visa} width={53} height={17} alt='visa' /></li>
+                        <li><Image src={img_greenBank} width={24} height={24} alt='green bank' /></li>
+                    </ul>
+                    <p>© Ninja Sushi. All right reserved.</p>
+            </div>
+            <div className={styles.rightBlock}> 
+            <h2>#NinjaSushi</h2>
+            <p>Ninja Sushi в фотографиях наших клиентов</p>
+            <Button variant={'primary_outlined'} >Перейти в instagram</Button>
+            </div>
+
+            <div className={styles.bottomBlock} >
+                <p>Политика конфиденциальности</p>
+                <ul className={styles.bottomBlock_icons} >
+                <li><Image src={img_mastercard} width={20} height={16} alt='master card' /></li>
+                        <li><Image src={img_visa} width={28} height={17} alt='visa' /></li>
+                        <li><Image src={img_greenBank} width={17} height={17} alt='green bank' /></li>
                 </ul>
-                <p>© Ninja Sushi. All right reserved.</p>
             </div>
         </div>
+         
+          
         
         </footer>
     )   

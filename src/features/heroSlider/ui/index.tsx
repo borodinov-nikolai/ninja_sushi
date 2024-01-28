@@ -21,7 +21,7 @@ export default function HeroSlider() {
         <div className={styles.slide_text} >
           <h2>Ninja Sushi в Краснодаре! Пока только в тц Галерея</h2>
           <p>Доставку делаем с 10:00 до 19:30</p>
-          <Button  width={'full'} className={styles.btn} >Перейти к новости</Button>
+          <Button className={styles.btn} >Перейти к новости</Button>
           </div> 
         </SwiperSlide>
         <SwiperSlide className={styles.slide} > 
@@ -29,7 +29,7 @@ export default function HeroSlider() {
         <div className={styles.slide_text} >
           <h2>Ninja Sushi в Краснодаре! Пока только в тц Галерея</h2>
           <p>Доставку делаем с 10:00 до 19:30</p>
-          <Button  width={'full'} className={styles.btn} >Перейти к новости</Button>
+          <Button className={styles.btn} >Перейти к новости</Button>
           </div> 
         </SwiperSlide>
         <SwiperSlide className={styles.slide} > 
@@ -37,7 +37,7 @@ export default function HeroSlider() {
         <div className={styles.slide_text} >
           <h2>Ninja Sushi в Краснодаре! Пока только в тц Галерея</h2>
           <p>Доставку делаем с 10:00 до 19:30</p>
-          <Button  width={'full'}>Перейти к новости</Button>
+          <Button >Перейти к новости</Button>
           </div> 
         </SwiperSlide>
         <SwiperSlide className={styles.slide} > 
@@ -45,7 +45,7 @@ export default function HeroSlider() {
         <div className={styles.slide_text} >
           <h2>Ninja Sushi в Краснодаре! Пока только в тц Галерея</h2>
           <p>Доставку делаем с 10:00 до 19:30</p>
-          <Button width={'full'} className={styles.btn} >Перейти к новости</Button>
+          <Button className={styles.btn} >Перейти к новости</Button>
           </div> 
         </SwiperSlide>
        
