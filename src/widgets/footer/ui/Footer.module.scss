@@ -1,221 +1,173 @@
-@import '../../../shared/styles/mixins/breakpoints';
-
+@import "../../../shared/styles/mixins/breakpoints";
 
 .root {
-    width: 100%;
-}
-
-.location {
-    display: flex;
-    flex-direction: column;
     background: white;
-}
+    border-radius: 12px 12px 0 0;
 
-.location_title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    padding: 24px 16px;
-}
+    h3 {
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(104, 104, 112, 1);
+    }
 
-.location_markers {
-    display: flex;
-    flex-direction: column;
-    width: 252px;
-    height: 104px;
-    justify-content: start;
-    padding-left: 16px;
-    gap: 10.5px;
-}
-
-.location_marker {
-    display: flex;
-    gap: 8px;
-}
-
-.location_greenCircle {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background: rgba(124, 179, 66, 0.24);
-    border: 1px solid rgba(85, 178, 11, 1);
-}
-.location_orangeCircle {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background: rgba(251, 192, 45, 0.24);
-    border: 1px solid rgba(251, 192, 45, 1);
-}
-.location_redCircle {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background: rgba(255, 82, 82, 0.24);
-    border: 1px solid rgba(255, 82, 82, 1);
-}
-
-.location_map {
-    iframe {
-        height: 320px;
-        width: 100%;
+    .list {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
     }
 }
 
-.app {
-    margin-top: 144px;
+.inner {
+    padding: 34px 24px 24px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 32px;
 }
 
-.app_inner {
-    position: relative;
-    border-radius: 12px;
-    background: white;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
+.leftBlock {
+    grid-column: 1/3;
+    grid-row: 1;
 }
 
-.app_image_m {
-    position: absolute;
-    top: -100px;
-    left: 16px;
+.logo {
+    p {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(104, 104, 112, 1);
+    }
+
+    img {
+        width: 170px;
+        height: auto;
+    }
 }
 
-.app_image {
-    display: none;
+.navigation {
+    grid-row: 2;
+    grid-column: 1/2;
 }
 
-.app_textHolder {
-    margin-top: 140px;
-}
-.app_title {
- 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+.checkout {
+    p {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(158, 158, 158, 1);
+    }
 }
 
-.app_description {
+.workTime {
+    p {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(158, 158, 158, 1);
+    }
+}
+
+.social {
+    button {
+        margin-top: 10px;
+        width: 155px;
+        height: 40px;
+        background: rgba(245, 245, 247, 1);
+        color: rgba(3, 155, 229, 1);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        gap: 8px;
+    }
+}
+
+.social_icons {
     margin-top: 12px;
-    color: rgba(104, 104, 112, 1);
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.app_downloads {
-    margin-top: 16px;
     display: flex;
     gap: 12px;
 }
 
-.aboutUs {
-    margin-top: 48px;
-}
-
-.aboutUs_text {
-    color:rgba(158, 158, 158, 1) ;
-}
-
-.aboutUs_more {
-    cursor: pointer;
-    margin-top: 8px;
+.rightBlock {
+    grid-column: 1/3;
+    grid-row: 4;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-weight: 500;
-    color: rgba(0, 204, 45, 1);
-    svg {
-        fill: rgba(0, 204, 45, 1);
-        width: 20px;
-        height: 20px;
-        transform: rotate(90deg);
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgba(104, 104, 112, 1);
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgba(158, 158, 158, 1);
     }
 }
 
-
+.rightBlock_icons {
+    height: 30px;
+    width: 162px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
 
 
 
 @include breakpoint(xl) {
-    .location_title {
-        text-align: center;
-        max-width: 1246px;
-        margin: 0 auto;
-        font-size: 32px;
-        line-height: 64px;
-        font-weight: 700;
-    }
+    .inner {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: space-between;
 
-    .location_markers {
-        height: 62px;
-        width: unset;
-        flex-direction: row;
-        max-width: 908px;
-        margin: 0 auto;
-        align-items: center;
-        padding: 0;
-    }
-
-    .location_title {
-        padding:  88px 0 48px 0;
-    }
-
-    .location_map {
-        iframe {
-            height: 671px;
+        div {
+        
+            width: max-content;
         }
     }
 
-    .app {
-        margin-top: 226px;
-    } 
 
-    .app_inner {
-        padding: 98px 0 85px 98px;
-        max-width: 1576px;
-        margin: 0 auto;
-    }
-
-
-    .app_textHolder {
-        max-width: 540px;
-        margin: 0;
-    }
-
-    .app_title {
-        margin: 0;
-        font-size: 54px;
-        line-height: 65.35px;
-    }
-    
-    .app_image_m {
+    .leftBlock {
+        padding-right: 32px;
+        grid-row: 1;
+        grid-column: 1;
+     p {
         display: none;
+     }
     }
 
-    .app_image {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        right: 109px;
+    .navigation {
+        grid-row: 1;
+        grid-column: 2;
     }
-
-    .app_textHolder {
-        max-width: 540px;
+    .checkout {
+        grid-row: 1;
+        grid-column: 3;
+        p {
+            display: none;
+        }
     }
-
-    .aboutUs {
-        max-width: 778px;
-        margin: 0 auto;
-        margin-top: 124px;
-        margin-bottom: 34px;
+    .workTime {
+        grid-row: 1;
+        grid-column: 4;
     }
-}
-
-
-
-
-@include breakpoint(2xl) {
-    .location_title {
-        font-size: 48px;
+    .social {
+        grid-row: 1;
+        grid-column: 5;
+    }
+    .rightBlock {
+        padding-left: 32px;
+        grid-row: 1;
+        grid-column: 6;
     }
 }

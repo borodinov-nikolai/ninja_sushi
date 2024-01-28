@@ -1,9 +1,14 @@
 .root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 12px;
     border: none;
+    width: 200px;
+    height: 43px;
 }
 
 

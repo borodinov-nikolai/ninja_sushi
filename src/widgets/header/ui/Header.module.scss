@@ -10,12 +10,13 @@
 }
 
 
+
 .inner {
     margin-top: 16px;
     background: white;
     height: 80px;
+    padding: 0 12px;
 border-radius: 12px;
-padding: 0 24px; 
 justify-content: space-between;
 display: flex;
 align-items: center;
@@ -168,6 +169,9 @@ align-items: center;
 @media(max-width: 1200px) {
     .inner {
         height: 56px;
+        .inner {
+            padding: 0 16px;
+        }
     }
 
     .city {

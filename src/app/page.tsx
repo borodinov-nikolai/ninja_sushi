@@ -3,6 +3,7 @@ import styles from './Home.module.scss'
 import { HeroSlider } from "@/features/heroSlider";
 import { ProductsBlock } from "@/widgets/productsBlock";
 import { PromoSlider } from "@/features/promoSlider";
+import { LocationBlock } from "@/widgets/locationBlock";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
    <section className={styles.promoSlider} ><PromoSlider/></section>
    <section className={styles.productsBlock} ><ProductsBlock title={'Закуски'} /></section>
    <section className={styles.productsBlock} ><ProductsBlock title={'Напитки'} /></section>
+   <section className={styles.locationBlock} ><LocationBlock/> </section>
     </main>
   )
 }
