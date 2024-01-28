@@ -21,6 +21,10 @@
     margin-top: 48px;
 }
 
+.locationBlock {
+          margin-top: 48px;
+}
+
 
 @include breakpoint(md) {
 
@@ -36,6 +40,10 @@
     }
 
     .promoSlider {
+        margin-top: 124px;
+    }
+
+    .locationBlock {
         margin-top: 124px;
     }
 }

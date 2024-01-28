@@ -56,8 +56,9 @@
 }
 
 .location_map {
+    height: 320px;
     iframe {
-        height: 320px;
+        height: 100%;
         width: 100%;
     }
 }
@@ -171,8 +172,9 @@
     }
 
     .location_map {
+        height: 647px;
         iframe {
-            height: 671px;
+            height: 100%;
         }
     }
 
