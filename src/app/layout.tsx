@@ -1,4 +1,3 @@
-import ThemeProvider from '@/shared/configs/themeProvider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/shared/styles/global.scss'
@@ -20,11 +19,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={inter.className}>
-        <ThemeProvider>
           <Header/>
         {children}
         <Footer/>
-        </ThemeProvider>
         </body>
     </html>
   )
