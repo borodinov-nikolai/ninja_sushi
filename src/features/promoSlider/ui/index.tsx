@@ -1,17 +1,14 @@
 'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 import styles from './PromoSlider.module.scss'
 import Image from 'next/image'
 import img_m from '../assets/images/promo_image_m.png';
 import img from '../assets/images/promo_image.png';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+import Button from '@/shared/ui/button';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import Button from '@/shared/ui/button';
 
 
 

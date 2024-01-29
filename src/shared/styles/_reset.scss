@@ -1,5 +1,6 @@
 /* reset.scss */
 
+
 html,
 body,
 div,
@@ -81,6 +82,7 @@ time,
 mark,
 audio,
 video {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -89,9 +91,7 @@ video {
   vertical-align: baseline;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 /* HTML5 display-role reset for older browsers */
 article,

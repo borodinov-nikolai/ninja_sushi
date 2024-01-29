@@ -1,16 +1,14 @@
 'use client'
 import React from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
+import Button from '@/shared/ui/button';
+import styles from './HeroSlider.module.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import styles from './HeroSlider.module.scss';
 
 
-// import required modules
+
 import { Autoplay, Pagination } from 'swiper/modules';
-import Button from '@/shared/ui/button';
 
 export default function HeroSlider() {
   return (

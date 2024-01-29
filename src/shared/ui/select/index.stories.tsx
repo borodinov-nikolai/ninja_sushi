@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Input from "./";
+import Select from "./";
 
-const meta: Meta<typeof Input> = {
-  title: "Input",
-  component: Input,
+const meta: Meta<typeof Select> = {
+  title: "Select",
+  component: Select,
   parameters: {
     layout: "centered",
   },
@@ -17,9 +17,9 @@ const meta: Meta<typeof Input> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Input>;
+type Story = StoryObj<typeof Select>;
 
-export const input: Story = {
+export const select: Story = {
   args: {
   
   },

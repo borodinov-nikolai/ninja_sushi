@@ -4,6 +4,7 @@ import { HeroSlider } from "@/features/heroSlider";
 import { ProductsBlock } from "@/widgets/productsBlock";
 import { PromoSlider } from "@/features/promoSlider";
 import { LocationBlock } from "@/widgets/locationBlock";
+import Select from "@/shared/ui/select";
 
 
 export default function Home() {
