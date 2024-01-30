@@ -5,6 +5,7 @@ import Range from '@/shared/ui/range';
 import Checkbox from '@/shared/ui/checkbox';
 import RadioButton from '@/shared/ui/radioButton';
 import Select from '@/shared/ui/select';
+import Switch from '@/shared/ui/switch';
 
 const Test = () => {
   return (
@@ -14,6 +15,7 @@ const Test = () => {
         <Checkbox/>
         <RadioButton/>
         <Select/>
+        <Switch/>
     </div>
   )
 }

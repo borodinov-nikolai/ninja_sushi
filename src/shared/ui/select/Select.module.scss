@@ -1,37 +1,64 @@
-.customSelect {
-    position: relative;
-    width: 200px;
-  
-    .selectedOption {
-        text-align: right;
-      padding: 8px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-    }
-  
-    .optionsList {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      border: 1px solid #ccc;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      left: 0;
-      display: none;
-  
-      &.active {
-        display: block;
-      }
-  
-      li {
-        text-align: right;
-        padding: 8px;
-        cursor: pointer;
+.root {
+position: relative;
+width: 311px;
+}
 
-        &:hover {
-            background-color: white;
-        }
+.selector {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  user-select: none;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px ;
+}
+
+.optionsList {
+  user-select: none;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  position: absolute;
+  top: 58px;
+  overflow: hidden;
+
+
+     li {
+      cursor: pointer;
+      height: 40px;
+      display: flex;
+      padding: 0 16px;
+      align-items: center;
+
+      &:hover {
+        background-color: rgb(221, 221, 221);
+
       }
-    }
+     }
+
+}
+
+
+.selectorActive {
+  outline: 1px solid rgba(255, 102, 51, 1);
+}
+
+.optionsList.animate {
+  opacity: 0;
+  animation: fadeIn 0.4s   forwards;
+}
+
+@keyframes fadeIn {
+  from {
+   top: 48px;
+      opacity: 0;
   }
+  to {
+      opacity: 1;
+  }
+}
+
+

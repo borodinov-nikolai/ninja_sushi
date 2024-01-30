@@ -7,7 +7,7 @@
  background: #ddd; 
        .progress {
             height: 10px;
-            background: #17A2B8;  
+            background: rgba(255, 102, 51, 1);  
             border-radius: 5px;  
             position: absolute;
             left: 25%;
@@ -37,12 +37,12 @@
         pointer-events: auto;
         height: 25px;
         width: 25px;
-        background:  #17A2B8;
+        background: rgba(255, 102, 51, 1);
         -webkit-appearance: none;
         border-radius: 50%;
 
         &:hover {
-            background: #1dcee9;
+            background: rgb(255, 121, 77);
         }
     }
 
@@ -51,7 +51,7 @@
         border: none;
         height: 17px;
         width: 17px;
-        background:  #17A2B8;
+        background:  rgba(255, 102, 51, 1);
         -moz-appearance: none;
         border-radius: 50%;
     }

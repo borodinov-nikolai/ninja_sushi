@@ -1,8 +1,10 @@
 .root {
     background: rgb(129, 129, 129);
+    padding: 800px 100px;
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 100px;
 }
