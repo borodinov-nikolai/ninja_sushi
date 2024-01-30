@@ -5,6 +5,7 @@
 
 
 
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -19,6 +20,9 @@ body {
     position: relative;
     
 }
+
+
+
 
 @include breakpoint(3xl) {
     .container {

@@ -85,9 +85,7 @@ align-items: center;
     display: flex;
     gap: 12px;
 
-    .burger {
-        display: none;
-    }
+  
   
     button {
         display:flex;
@@ -228,11 +226,7 @@ align-items: center;
         
             gap: 4px;
 
-            .burger {
-                 background: rgba(245, 245, 247, 1);
-                outline: none;
-                display: flex;
-            }
+        
         }
 }
 
